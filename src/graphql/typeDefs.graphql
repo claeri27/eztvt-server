@@ -1,6 +1,7 @@
 type Query {
   User(id: ID!): User
-  Show(id: ID!): Show
+  Show(id: ID, name: String): Show
+  Shows(network: String, status: String, country: String): [Show]
 }
 
 type Mutation {
