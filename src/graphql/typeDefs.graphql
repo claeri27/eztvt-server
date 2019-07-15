@@ -1,0 +1,33 @@
+type Query {
+  User(id: ID!): User
+  # Show(id: ID!): Show
+}
+
+type Mutation {
+  createUser(params: UserInput!): User
+}
+
+input UserInput {
+  id: ID
+  username: String
+  email: String
+}
+
+type User {
+  id: ID!
+  username: String
+  password: String
+  email: String
+}
+
+# type Show {
+#   id: ID!
+#   databaseId: Int
+#   name: String
+#   startDate: String
+#   endDate: String
+#   country: String
+#   network: String
+#   status: String
+#   imageThumbnailPath: String
+# }
