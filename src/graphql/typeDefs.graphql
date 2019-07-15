@@ -1,6 +1,6 @@
 type Query {
   User(id: ID!): User
-  # Show(id: ID!): Show
+  Show(id: ID!): Show
 }
 
 type Mutation {
@@ -20,14 +20,14 @@ type User {
   email: String
 }
 
-# type Show {
-#   id: ID!
-#   databaseId: Int
-#   name: String
-#   startDate: String
-#   endDate: String
-#   country: String
-#   network: String
-#   status: String
-#   imageThumbnailPath: String
-# }
+type Show {
+  id: ID!
+  databaseId: Int
+  name: String
+  startDate: String
+  endDate: String
+  country: String
+  network: String
+  status: String
+  imageThumbnailPath: String
+}

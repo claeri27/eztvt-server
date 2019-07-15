@@ -6,9 +6,9 @@ module.exports = {
     User: async (parents, args, context, info) => {
       return db.User.findByPk(args.id)
     },
-    // Show: async (parents, args, context, info) => {
-    //   return db.Show.findByPk(args.id)
-    // },
+    Show: async (parents, args, context, info) => {
+      return db.Show.findByPk(args.id)
+    },
   },
   Mutation: {
     createUser: async (_, { params }, context) => {
